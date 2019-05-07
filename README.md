@@ -1,6 +1,6 @@
 ## `September 10th` at Github pages.
 
-→ [http://september10th.github.com](http://september10th.github.com)
+→ [http://september10th.github.io](http://september10th.github.io)
 
 
 ### Author
