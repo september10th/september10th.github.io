@@ -1,0 +1,56 @@
+:root {
+    --color-bg: #fefefe;
+    --color-surface: #18181b;
+
+    --color-text: #010101;
+    --color-text-secondary: #9a9aa1;
+
+    --color-border: rgba(255, 255, 255, 0.08);
+
+    --container-width: 1200px;
+
+    --font-system:
+        -apple-system,
+        BlinkMacSystemFont,
+        "SF Pro Display",
+        "Helvetica Neue",
+        sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background: var(--color-bg);
+    color: var(--color-text);
+
+    font-family: var(--font-system);
+
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+}
