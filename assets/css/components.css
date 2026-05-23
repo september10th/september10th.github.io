@@ -165,33 +165,15 @@ apps-section {
 
 .apps-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
     gap: 16px;
 }
-
-/* .app-card {
-    display: block;
-
-    padding: 20px;
-
-    border: 1px solid var(--color-border);
-    border-radius: 16px;
-
-    background: rgba(255, 255, 255, 1);
-
-    transition: transform 0.2s ease, border-color 0.2s ease;
-}
-
-.app-card:hover {
-    transform: translateY(-4px);
-    border-color: rgba(255, 255, 255, 0.2);
-} */
 
 .app-card {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    padding: 30px 0 30px 30px;
+    padding: 25px 8px 25px 25px;
     border: 1px solid var(--color-border);
     border-radius: 8px;
     background:
@@ -223,7 +205,7 @@ apps-section {
     justify-content: center;
 
     border-radius: 22%;
-    border: 2px solid rgba(220, 220, 220, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     font-size: 14px;
 
     filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.1)) drop-shadow(0 4px 10px rgba(0, 0, 0, 0.2));
@@ -250,7 +232,7 @@ apps-section {
 .app-tag {
     padding: 6px 10px;
     border-radius: 8px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     background: rgba(255, 255, 255, 0.06);
     color: var(--color-text-primary);
     font-size: 0.78rem;

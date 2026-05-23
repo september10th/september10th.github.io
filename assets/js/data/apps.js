@@ -12,5 +12,12 @@ export const apps = [
         url: "/apps/mr-rabbit",
         icon: "https://picsum.photos/60",
         tags: ["iOS", "Flutter"]
+    },
+    {
+        title: "hey card!",
+        desc: "hey card app.",
+        url: "/apps/hey-card",
+        icon: "https://picsum.photos/60",
+        tags: ["iOS", "Flutter"]
     }
 ]
