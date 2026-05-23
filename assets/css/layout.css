@@ -28,17 +28,24 @@
     gap: 24px;
 }
 
+/* -------------------- hero -------------------- */
 .hero {
-    min-height: calc(100vh - 72px);
+    /* min-height: calc(100vh - 72px); */
+    min-height: calc(76vh - 72px);
 
     display: flex;
     align-items: center;
 }
 
 .hero-inner {
-    width: 100%;
+    /* width: 100%; */
+
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 64px;
+    align-items: center;
 }
 
 .hero-content {
-    max-width: 720px;
+    max-width: 660px;
 }

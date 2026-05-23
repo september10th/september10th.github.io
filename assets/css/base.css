@@ -1,12 +1,13 @@
 :root {
-    --color-bg: #e1e1e1;
+    --color-bg: #fdfdfd;
+    --color-light-grey-bg: #f5f6f7;
     --color-surface: #18181b;
     --color-header: #fefefe;
 
     --color-text: #010101;
     --color-text-secondary: #9a9aa1;
 
-    --color-border: rgba(255, 255, 255, 0.08);
+    --color-border: rgba(160, 160, 160, 0.1);
 
     --container-width: 1200px;
 
