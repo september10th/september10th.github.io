@@ -14,8 +14,14 @@ class AppsSection extends HTMLElement {
 <div class="apps-grid">
 ${apps.map(app => `
 <a class="app-card" href="${app.url}">
-<div class="app-card-title">${app.title}</div>
-<div class="app-card-desc">${app.desc}</div>
+  <img class="app-icon" src="${app.icon}" />
+  <div class="app-card-title">${app.title}</div>
+  <div class="app-card-desc">${app.desc}</div>
+  <div class="app-tags">
+  ${app.tags.map(tag => `
+    <div class="app-tag">${tag}</div>
+    `).join('')}
+  </div>
 </a>
 `).join('')}
 </div>
