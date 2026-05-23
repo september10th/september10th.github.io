@@ -25,6 +25,11 @@
     color: var(--color-text);
 }
 
+/* 高亮 nav 中已打开的页面 */
+.site-nav a.active {
+    color: var(--color-text);
+}
+
 /* ------------------ footer ------------------ */
 
 .site-footer {
@@ -53,7 +58,7 @@
     color: var(--color-text-secondary);
 }
 
-/* ---------------------- hero --------------------- */
+/* ---------------------- home hero --------------------- */
 .hero {
     background-color: var(--color-light-grey-bg);
 }
@@ -156,6 +161,39 @@
     display: block;
     width: 100%;
     height: auto;
+}
+
+/* ------------------- page hero ------------------- */
+
+.page-hero {
+    padding: 60px 0 10px;
+}
+
+.page-label {
+    margin-bottom: 20px;
+
+    color: var(--color-text-secondary);
+
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+
+    font-size: 0.82rem;
+}
+
+.page-title {
+    font-size: clamp(3rem, 8vm, 5rem);
+
+    line-height: 0.95;
+
+    letter-spacing: -0.05em;
+    margin-bottom: 30px;
+}
+
+.page-description {
+    max-width: 640px;
+    color: var(--color-text-secondary);
+    line-height: 1.8;
+    font-size: 1.05rem;
 }
 
 /* ------------------- home section apps -------------------- */
