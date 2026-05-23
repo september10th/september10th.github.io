@@ -4,26 +4,27 @@ class AboutSection extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
 <section class="about-section">
-<div class="container">
+  <div class="about-background"></div>
 
-<div class="about-head">
-<h2>About</h2>
-<p>Small notes about this site.</p>
-</div>
+  <div class="container">
 
-<div class="about-grid">
-${aboutItems.map(item => `
-    <div class="about-item">
-    <div class="about-icon">◼︎</div>
-    <div>
-    <div class="about-title">${item.title}</div>
-    <div class="about-desc">${item.desc}</div>
+    <div class="about-head section-header">
+      <h2 class="">About</h2>
+      <p class="">Designed with clarity and care.</p>
     </div>
+
+    <div class="about-features">
+${aboutItems.map(item => `
+    <div class="about-feature">
+      <img class="about-icon" src="${item.icon}" />
+      <div class="about-title">${item.title}</div>
+      <div class="about-desc">${item.desc}</div>
     </div>
     `).join('')}
-</div>
+    </div>
 
-</div>
+  </div>
+
 </section>
     `
     }

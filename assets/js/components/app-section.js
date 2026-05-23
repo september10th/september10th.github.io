@@ -1,13 +1,13 @@
 import { apps } from '../data/apps.js'
 
 class AppsSection extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
 <section class="apps-section">
 <div class="container">
 
 <div class="section-header">
-  <h2>Apps</h2>
+  <h2>Applications</h2>
   <p>Small tools, experiments, ideas.</p>
 </div>
 
@@ -19,7 +19,10 @@ ${apps.map(app => `
   <div class="app-card-desc">${app.desc}</div>
   <div class="app-tags">
   ${app.tags.map(tag => `
-    <div class="app-tag">${tag}</div>
+    <div class="app-tag">
+    <img class="app-tag-icon" src="${tag.icon}" alt="" />
+    <span>${tag.label}</span>
+    </div>
     `).join('')}
   </div>
 </a>
@@ -29,7 +32,7 @@ ${apps.map(app => `
 </div>
 </section>
     `
-    }
+  }
 }
 
 customElements.define('apps-section', AppsSection)

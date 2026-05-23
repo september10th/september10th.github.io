@@ -2,7 +2,8 @@ class HeroSection extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
 <section class="hero">
-<div class="container hero-inner">
+<div class="container">
+<div class="hero-inner">
 
 <div class="hero-content">
   <p class="hero-label">Independent App Collection</p>
@@ -22,6 +23,7 @@ class HeroSection extends HTMLElement {
   </div>
 </div>
 
+</div>
 </div>
 </section>
         `

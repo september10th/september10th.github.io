@@ -1,4 +1,4 @@
-/* -------------------------------------------- */
+/* --------------------- header --------------------- */
 .site-logo {
     font-size: 1.4rem;
     font-weight: 600;
@@ -23,6 +23,34 @@
 .site-nav a:hover,
 .site-nav button:hover {
     color: var(--color-text);
+}
+
+/* ------------------ footer ------------------ */
+
+.site-footer {
+    padding: 48px 0;
+    border-top: 1px solid var(--color-border);
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+}
+
+
+/* ----------------- section area ------------------- */
+.section-header {
+    margin: 80px 0 32px;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    letter-spacing: -0.03em;
+}
+
+.section-header p {
+    margin-top: 8px;
+    color: var(--color-text-secondary);
 }
 
 /* ---------------------- hero --------------------- */
@@ -130,33 +158,6 @@
     height: auto;
 }
 
-/* ------------------ footer ------------------ */
-
-.site-footer {
-    padding: 48px 0;
-    border-top: 1px solid var(--color-border);
-}
-
-.footer-text {
-    font-size: 0.9rem;
-    color: var(--color-text-secondary);
-}
-
-/* ----------------- section area ------------------- */
-.section-header {
-    margin: 80px 0 32px;
-}
-
-.section-header h2 {
-    font-size: 2rem;
-    letter-spacing: -0.03em;
-}
-
-.section-header p {
-    margin-top: 8px;
-    color: var(--color-text-secondary);
-}
-
 /* ------------------- home section apps -------------------- */
 
 apps-section {
@@ -214,7 +215,7 @@ apps-section {
 .app-card-title {
     font-size: 1.2rem;
     font-weight: 600;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.03em;
 }
 
 .app-card-desc {
@@ -232,76 +233,88 @@ apps-section {
 .app-tag {
     padding: 6px 10px;
     border-radius: 8px;
+
     border: 1px solid rgba(0, 0, 0, 0.1);
     background: rgba(255, 255, 255, 0.06);
     color: var(--color-text-primary);
     font-size: 0.78rem;
     font-weight: 600;
     width: fit-content;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.app-tag-icon {
+    width: 14px;
+    height: 14px;
+    opacity: 0.9;
 }
 
 /* ------------------- home section about ------------------- */
 
 .about-section {
-    margin: 100px 0;
-    background-color: #ffffff;
+    position: relative;
+    margin: 100px 0 80px 0;
+    overflow: hidden;
+    background-color: var(--color-light-grey-bg);
+}
+
+.about-background {
+    position: absolute;
+    inset: 0;
+
+    background: radial-gradient(circle at right center, rgba(255, 255, 255, 0.06), transparent 45%);
+
+    pointer-events: none;
 }
 
 .about-head {
-    margin-bottom: 40px;
+    margin: 40px 0 30px 0;
+    position: relative;
+    max-width: 760px;
+    z-index: 1;
 }
 
-.about-head h2 {
-    font-size: 2rem;
-    letter-spacing: -0.03em;
-}
+.about-features {
+    position: relative;
 
-.about-head p {
-    margin-top: 8px;
-    color: var(--color-text-secondary);
-}
-
-.about-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+
+    z-index: 1;
+    width: 70%;
+    min-width: 500px;
+    padding: 30px 0 0 0;
 }
 
-.about-item {
+.about-feature {
+    /* border: 1px solid #fff; */
+    /* debug */
+
     display: flex;
-    gap: 14px;
-
-    padding: 18px;
-
-    border: 1px solid var(--color-border);
-    border-radius: 16px;
-
-    background: rgba(255, 255, 255, 0.02);
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 3rem;
 }
 
 .about-icon {
     width: 28px;
     height: 28px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    color: var(--color-text-secondary);
-
-    font-size: 12px;
+    margin-bottom: 12px;
 }
 
 .about-title {
-    font-size: 1rem;
-    font-weight: 500;
-    margin-bottom: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .about-desc {
-    font-size: 0.92rem;
+    font-size: 0.96rem;
     color: var(--color-text-secondary);
-    line-height: 1.5;
+    line-height: 1.4;
 }
 
 /* ---------------- home section news ------------------ */
