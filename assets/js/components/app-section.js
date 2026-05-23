@@ -7,8 +7,8 @@ class AppsSection extends HTMLElement {
 <div class="container">
 
 <div class="section-header">
-<h2>Apps</h2>
-<p>Small tools, experiments, ideas.</p>
+  <h2>Apps</h2>
+  <p>Small tools, experiments, ideas.</p>
 </div>
 
 <div class="apps-grid">
