@@ -31,7 +31,8 @@
 /* -------------------- hero -------------------- */
 .hero {
     /* min-height: calc(100vh - 72px); */
-    min-height: calc(76vh - 72px);
+    min-height: calc(60vh - 72px);
+    /* 690px or 570px */
 
     display: flex;
     align-items: center;
@@ -48,4 +49,11 @@
 
 .hero-content {
     max-width: 660px;
+}
+
+/* ---------------------- app hero --------------------- */
+.app-hero {
+    min-height: calc(50vh - 72px);
+    display: flex;
+    align-items: center;
 }
